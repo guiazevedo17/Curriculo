@@ -14,7 +14,7 @@ Os quesitos mais desenvolvidos ao longo do projeto foram as propriedades de disp
 ### Visualização Mobile
 
 <center>
-<img width="300px" height="100px" src="assets/recursividade1.png">
-<img width="300px" height="100px" src="assets/recursividade2.png">
+<img width="300px" height="200px" src="assets/recursividade1.png">
+<img width="300px" height="200px" src="assets/recursividade2.png">
 </center>
 
