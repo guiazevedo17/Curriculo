@@ -7,8 +7,8 @@ Os quesitos mais desenvolvidos ao longo do projeto foram as propriedades de disp
 ### Visualização Desktop
 
 <center>
-<img width="300px" height="167px" src="assets/apresentacao_curriculo1.png">
-<img width="300px" height="167px" src="assets/apresentacao_curriculo2.png">
+<img width="350px" height="197px" src="assets/apresentacao_curriculo1.png">
+<img width="350px" height="197px" src="assets/apresentacao_curriculo2.png">
 </center>
 
 ### Visualização Mobile
