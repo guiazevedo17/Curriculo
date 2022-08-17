@@ -1,4 +1,4 @@
 # Curriculo
 Currículo em HTML + CSS
 
-<img src="assets/gif_apresentacao.gif">
+<img width="240px" height="135px" src="assets/gif_apresentacao.gif">
