@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+        <title>Guilherme Azevedo</title>
+
+        <style>
+            
+			* { /* "Reset" */
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Poppins', sans-serif;
+			}
+
+
+			.container{
+				background-color: #101024;
+				color: white;
+				display: grid;
+				grid-template-columns: 0.5fr 1.3fr 0.5fr;
+				grid-template-rows: 3;
+				grid-template-areas: "top top top"
+									". contact ."                         
+									". cards ."
+				;
+				justify-content: center;
+			}
+
+			.top{
+				background: linear-gradient(to left, #270082, #FA58B6);
+				color: #101024;
+				text-align: center;
+				grid-column-start: 1;
+				grid-column-end: 3;
+				grid-area: top;
+				padding: 20px 0;
+				width: 100%vw;
+			}
+
+			.perfil img{
+				width: 150px;
+				height: 160px;
+				border-radius: 300px;
+				align-self: center;
+			}
+
+			.contact{
+				grid-area: contact;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1;
+				grid-template-areas: "img text";
+				margin-top: 40px;
+				color: #7A0BC0;
+			}
+
+			.contact .perfil{
+				grid-area: img;
+			}
+
+			.perfil{
+				display: flex;
+				justify-content: center;
+			}
+
+			.contact .text{
+				grid-area: text;
+				text-align: center;
+				color: #101024;
+				border-radius: 50px;
+				background-color: #AC36A2;
+				margin: 0 60px;
+				padding: 10px 0;
+				max-width: 355px;
+				max-height: 175px;
+			}
+
+
+			.contact h2{
+				text-align: center;
+				padding: 10px 0;
+			}
+
+
+
+			.contact a{
+				text-decoration: none;
+				color: #101024;
+			}
+
+
+
+			main.cards{ /* Bloco que ocntem os Cards */
+				display: grid;
+				grid-template-columns: 1fr 1fr ;
+				grid-template-rows: 1fr 1fr 1fr;
+				gap: 50px;
+				grid-area: cards;
+				padding: 32px;
+			}
+
+
+			section.card{ /* Propriedades de todos os Cards */
+				box-sizing: content-box;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				text-align: center;
+				background-color: #1A1A40;
+				padding: 1rem 1.5rem;
+				border-radius: 20px;
+				overflow: hidden;
+				position: relative;
+				justify-content: center;
+				flex-flow: column;
+				box-shadow: 20px 20px 60px -35px #FA58B6;
+
+				max-width: 370px;
+				max-height: 199px;
+
+				min-width: 370px;
+				min-height: 199px;
+			}
+
+			section.card h1{ /* Títulos dos Cards */
+				/*font-size: 100%;*/
+				margin: 16px 0;
+				color: #FA58B6;
+			}
+
+			section.card p{ /* Texto dos Cards */
+				font-weight: 350;
+				max-width: 300px;
+				margin-bottom: 16px;
+
+			}
+
+			section.card .clip{
+				position: absolute;
+				background-color: #FA58B6;
+				color: white;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-flow: column;
+				clip-path: circle(15% at 105% 50%);
+				transition: 0.5s all ease-in-out;
+			}
+
+			section.card:hover .clip{
+				clip-path: circle(150% at 105% 47.5%);
+			}
+
+
+
+
+			/* Break points */
+
+			/* DESKTOP - 1920px*/
+			@media screen and (max-width: 1300px) {
+				main.cards{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.contact{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					gap: 20px;
+				}
+
+				.contact h2{
+					padding: 10px 0;
+				}
+
+				.contact .text{
+					margin: 0 150px;
+					min-width: 253px;
+					min-height: 189px;
+					padding-bottom: 0;
+				}
+
+			}
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="top">
+                <h1>Guilherme Gomes de Azevedo</h1>
+                <h3>Engenheiro de Software</h3>
+            </div>
+    
+            <div class="contact">
+               
+                <div class="perfil">
+                    <img src="images/perfil.jpeg" />
+                </div>
+
+                <div class="text">
+                    <h2>Contato</h2>
+                
+                    <img src="images/whatsapp.png"/>
+                    <span>(14) 99717-0127</span>
+                    <br/>
+                    <img src="images/email.png"/>
+                    <span>gui.azevedo@ymail.com</span>
+                    <br/>
+                    <img src="images/linkedin.png"/>
+                    <a target="_blank" href="https://www.linkedin.com/in/guilherme-g-azevedo/">@guilherme-g-azevedo</a> 
+                    <br/>
+                    <img src="images/github.png"/>
+                    <a target="_blank" href="https://github.com/guiazevedo17">@guiazevedo17</a>
+                </div>
+
+            </div>
+    
+            <main class="cards">
+    
+                <section class="card">
+                    <h1>Resumo Qualificações</h1>
+    
+                    <div class="clip">
+                        <ul>
+                            <li>Inteligêcia emocional</li>
+                            <li>Excelente Disciplina</li>
+                            <li>Boa comunicação</li>
+                            <li>Autodidata</li>
+                            <li>Proatividade</li>
+                            <li>Alta Resiliência</li>
+                        </ul>
+                    </div>
+
+                </section>
+    
+                <section class="card">
+                    <h1>Experiência Profissional</h1>
+                    
+                    <div class="clip">
+                        <ul>
+                            <li>Repositor - Supermercado Viena</li>
+                            <p>2020 - 2021</p>
+                        </ul>
+                    </div>
+                </section>
+    
+                <section class="card">
+                    <h1>Formação Acadêmica</h1>
+        
+                    <div class="clip">
+                        <ul>
+                            <li>Engenharia de Software - PUCCAMP</li>
+                            <p>Graduação, conclusão em 2024</p>
+                        </ul>
+                    </div>
+                </section>
+    
+                <section class="card">
+                    <h1>Tecnologias</h1>
+    
+                    <div class="clip">
+                        <ul>
+                            <li>C, Java, Flutter</li>
+                            <li>HTML, CSS</li>
+                            <li>MySQL, SQLite</li>
+                            <li>Git, GitHub</li>
+                        </ul>
+                    </div>
+                </section>
+    
+                <section class="card">
+                    <h1>Certificações</h1>
+    
+                    <div class="clip">
+                        <ul>
+                            <li>Java Básico [40 horas] - Curso em Video</li>
+                        </ul>
+                    </div>
+                </section>
+    
+                <section class="card">
+                    <h1>Idiomas</h1>
+    
+                    <div class="clip">
+                        <ul>
+                            <li>Inglês > Avançado</li>
+                            <li>Espanhol > Básico</li>
+                        </ul>
+                    </div>
+                </section>
+    
+            </main>
+        </div>
+
+    </body>
+
+</html>
