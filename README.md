@@ -7,14 +7,14 @@ Os quesitos mais desenvolvidos ao longo do projeto foram as propriedades de disp
 ### Visualização Desktop
 
 <center>
-<img src="assets/apresentacao_curriculo1.png">
-<img src="assets/apresentacao_curriculo2.png">
+<img width="400px" height="137px" src="assets/apresentacao_curriculo1.png">
+<img width="400px" height="137px" src="assets/apresentacao_curriculo2.png">
 </center>
 
 ### Visualização Mobile
 
 <center>
-<img src="assets/recursividade1.png">
-<img src="assets/recursividade2.png">
+<img width="300px" height="37px" src="assets/recursividade1.png">
+<img width="300px" height="37px" src="assets/recursividade2.png">
 </center>
 
